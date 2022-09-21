@@ -1,0 +1,31 @@
+<div style="text-align: center;">
+    <div class="moldura">
+        <div id="alvo">
+            <div (click)="selecionou(pt)" *ngFor="let pt of pontos" class="noselect" [attr.style]="'left:'+pt.x+'px;position: absolute;top:'+pt.y+'px;scale:0.1;cursor: pointer;'" >
+                <div style="width: fit-content;height: 210px;">
+                    <div class="mostrador">
+                        {{pt.nome}}
+                        {{pt.situacao=='livre'?'👍':'💵'}}
+                    </div>
+                    <img src="assets/ping.png" *ngIf="pt.situacao=='livre'" style="width: 200px;position: relative;bottom: 94px;z-index: -2;filter: drop-shadow(9px 28px 8px gray);" alt="pin">
+                    <img src="assets/pin.png" *ngIf="pt.situacao=='vendido'" style="width: 200px;position: relative;bottom: 94px;z-index: -2;filter: drop-shadow(9px 28px 8px gray);" alt="pin">
+                </div>
+                
+                
+            </div>
+            <img src="assets/image.jpg" [attr.style]="'width: '+largura+'px;'" class="mapa"  alt="mapa">
+        
+        
+        </div> 
+    </div>
+</div>
+
+<div *ngFor="let pt of pontos">
+    
+</div>
+
+
+
+
+
+

@@ -2,13 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { NgxPanZoomModule } from 'ngx-panzoom';
+import { MapaComponent } from './mapa/mapa.component';
+import { NovoMapaComponent } from './novo-mapa/novo-mapa.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MapaComponent,
+    NovoMapaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxPanZoomModule
   ],
   providers: [],
   bootstrap: [AppComponent]

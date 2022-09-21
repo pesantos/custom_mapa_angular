@@ -18,6 +18,10 @@
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
+    "@panzoom/panzoom": "^4.5.1",
+    "angular-hammer": "^2.2.0",
+    "ngx-panzoom": "^13.0.0",
+    "ngx-pinch-zoom": "^2.6.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
